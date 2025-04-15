@@ -1,0 +1,11 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Add some base body styles */
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased; /* Apply colors and font */
+  }
+}

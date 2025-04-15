@@ -1,0 +1,16 @@
+{
+  "short_name": "Flowly",
+  "name": "Flowly Tracker",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2E20D0" /* Or your primary blue */,
+  "background_color": "#EAEAEA" /* Your light background */,
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+    /* Add proper 192x192 and 512x512 icons later for real PWA */
+  ]
+}
