@@ -1,54 +1,90 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌊 Flowly App
 
-Currently, two official plugins are available:
+A smart, all-in-one financial tracking dashboard for personal and business cash flow, account balances, product sales, and spending analytics. Flowly helps you understand **where your money goes**, how much you're making, and keeps your finances organized across platforms like **CashApp, PayPal, Chime, and Money Network**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 💸 **Multi-account transaction tracking** (Cash, CashApp, PayPal, Chime, etc.)
+- 🏷️ Tag expenses as *Personal*, *Business*, or *Mixed*
+- 📊 Real-time dashboard with balance breakdowns and cash flow graphs
+- 🔎 Filter & search history by date, account, category, or type
+- 🌗 Fully responsive with **Dark/Light mode** support
+- 🔄 Export data to **Google Sheets** or **CSV**
+- 📦 Inventory & product tracking for small business use
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React + TailwindCSS
+- **Icons & UI:** Lucide Icons, Shadcn UI (optional)
+- **State Management:** React Hooks / Context API
+- **Data Storage:** JSON, LocalStorage or backend (TBD)
+- **Export:** FileSaver, Google Sheets API (planned)
+- **Tooling:** Vite, Git, GitHub
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/1urbanotter/flowly-app.git
+cd flowly-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2. Install dependencies
+```bash
+npm install
+# or
+yarn install
 ```
+
+### 3. Run the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── components/      // UI components
+├── pages/           // Page-level views
+├── data/            // Static/mock data
+├── lib/             // Utilities & helpers
+├── styles/          // Tailwind config & theme
+└── App.jsx          // App root
+```
+
+---
+
+## 🌐 Deployment
+
+You can deploy with:
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [Render](https://render.com/)
+- Or self-host with Docker
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and open a PR for fixes or new features!  
+For ideas or issues, create a [GitHub Issue](https://github.com/1urbanotter/flowly-app/issues).
+
+---
+
+## 📃 License
+
+MIT © 2025 [1urbanotter](https://github.com/1urbanotter)
+
+---
